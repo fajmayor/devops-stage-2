@@ -22,6 +22,7 @@ To get started with this template, please follow the instructions in the respect
 
 #### On Local Machine
 To run the application on local machine, run the command below;
+
 `docker-compose --env-file ./backend/.env up -d`
 
 #### In Production
