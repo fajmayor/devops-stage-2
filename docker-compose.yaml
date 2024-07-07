@@ -119,9 +119,9 @@ services:
       - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-https.middlewares=${STACK_NAME?Variable not set}-www-redirect
       - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.middlewares=https-redirect,${STACK_NAME?Variable not set}-www-redirect
       
-  volumes:
-    app-db-data:
+volumes:
+  app-db-data:
 
-  networks:
-    traefik-public:
-      external: true
+networks:
+  traefik-public:
+    external: true
