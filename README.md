@@ -26,10 +26,12 @@ To run the application on local machine, run the command below;
 
 #### In Production
 To run the application on local machine, run the command below;
-`docker-compose -f docker-compose.yml --env-file ./backend/.env up -d`
-Make sure to run 
 `export EMAIL=fajmayor@gmail.com` 
 `export PASSWORD=F@jmayor2020@`
 `export HASHED_PASSWORD=$(openssl passwd -apr1 $PASSWORD)`
+
+`docker-compose -f docker-compose.traefik.yml --env-file ./backend/.env up -d`
+
+`docker-compose -f docker-compose.yml --env-file ./backend/.env up -d`
 
 
