@@ -94,7 +94,7 @@ services:
     build: 
       context: ./frontend
       args: 
-        - VITE_API_URL=https://${DOMAIN:8000?Variable not set}
+        - VITE_API_URL=https://${DOMAIN?Variable not set}
         - NODE_ENV=production
     restart: always
     networks:
