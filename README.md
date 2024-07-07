@@ -18,3 +18,18 @@ To get started with this template, please follow the instructions in the respect
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+## Application Deployment
+
+#### On Local Machine
+To run the application on local machine, run the command below;
+`docker-compose --env-file ./backend/.env up -d`
+
+#### In Production
+To run the application on local machine, run the command below;
+`docker-compose -f docker-compose.yml --env-file ./backend/.env up -d`
+Make sure to run 
+`export EMAIL=fajmayor@gmail.com` 
+`export PASSWORD=F@jmayor2020@`
+`export HASHED_PASSWORD=$(openssl passwd -apr1 $PASSWORD)`
+
+
